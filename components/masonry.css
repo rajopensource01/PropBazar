@@ -1,0 +1,48 @@
+.masonry {
+  position: relative;
+  width: 100%;
+  max-width: 100%;
+  margin: 0 auto;
+}
+
+.masonry > div {
+  position: absolute;
+  will-change: transform, width, height, opacity;
+  padding: 8px;
+}
+
+.masonry > div > div {
+  position: relative;
+  border-radius: 8px;
+  overflow: hidden;
+  box-shadow: 0 10px 15px -3px rgba(0, 0, 0, 0.1), 0 4px 6px -2px rgba(0, 0, 0, 0.05);
+  transition: transform 0.3s ease;
+}
+
+.masonry > div > div:hover {
+  transform: scale(1.02);
+}
+
+@media (max-width: 600px) {
+  .masonry {
+    columns: 1;
+  }
+}
+
+@media (min-width: 600px) and (max-width: 1000px) {
+  .masonry {
+    columns: 2;
+  }
+}
+
+@media (min-width: 1000px) and (max-width: 1500px) {
+  .masonry {
+    columns: 3;
+  }
+}
+
+@media (min-width: 1500px) {
+  .masonry {
+    columns: 4;
+  }
+}
