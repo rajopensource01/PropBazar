@@ -1,4 +1,4 @@
-Certainly! Here’s a professional and beginner-friendly **GitHub README.md** template for your PropBazar blockchain real estate project:
+
 
 ---
 
